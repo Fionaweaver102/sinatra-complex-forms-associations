@@ -6,6 +6,7 @@ class PetsController < ApplicationController
   end
 
   get '/pets/new' do 
+    @pet = Pet.new 
     erb :'/pets/new'
   end
 
